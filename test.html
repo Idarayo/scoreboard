@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body {
+            color:rgb(20,20,20, 0.9);
+            background-color: peachpuff;
+            background-clip: inherit;
+            font-family: sans-serif;
+        }
+        .cont {
+            max-width:50%;
+            display:flex;
+            background-color: rgb(3, 5, 39);
+            color:white;
+            border-radius: 6px;
+            padding: 6px;
+            justify-content:space-evenly;
+            text-align: center;
+        }
+        button {
+            background: none;
+            color:white;
+            border: 1px solid white;
+            border-radius: 6px;
+            padding: 6px;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            letter-spacing: 0.2rem;
+        }
+        h1 {
+            background-color: rgba(0, 0, 0, 0.63);
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(170, 16, 16);
+            font-size:8vw;
+            font-weight: bold;
+            padding:6px;
+            border-radius: 6px;
+        }
+    
+        /*.text {
+            overflow: hidden;
+            border-right: 0.15rem solid powderblue;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end) infinite;
+        }
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }*/
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div>
+            <h3>HOME</h3>
+            <h1 id="home-el">0</h1>
+            <button onclick="one()">+1</button>
+            <button onclick="two()">+2</button>
+            <button onclick="three()">+3</button>
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <h1 id="guest-el">0</h1>
+            <button onclick="once()">+1</button>
+            <button onclick="too()">+2</button>
+            <button onclick="thre()">+3</button>
+        </div>
+        
+    </div>
+    <p id="demo"></p>
+
+<script src="test.js"></script>
+
+</body>
+</html>
